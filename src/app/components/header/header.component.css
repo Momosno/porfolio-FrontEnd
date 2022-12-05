@@ -1,0 +1,68 @@
+header{
+    display: grid;
+    background-color: #F57600;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-left{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    
+    align-content: center;
+    justify-content: center;
+
+    
+}
+
+.logo{
+    margin: 10px;
+
+    width: 150px;
+    border-radius: 100px;
+
+}
+
+.header-logotext{
+    display: grid;
+    align-content: center;
+}
+
+.container-right{
+    display: grid;
+    grid-template-columns: repeat(3,75px) 40px 0.3fr;
+    justify-content: right;
+    align-content: stretch;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.social{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 25px;
+    
+    
+      
+}
+
+.social:hover{
+    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    filter: invert(100%);
+}
+
+.button-login{
+    margin-right: 70px;
+    grid-column: 5/6;
+
+    background-color: #0087A8 ;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+.button-login:hover{
+    background-color: #00C6F5 ;
+    
+}
