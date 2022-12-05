@@ -1,6 +1,14 @@
 <div class="body">
     <div class="container-login">
-        HOLA
+        <label class="titulo-login" for="Titulo">BIENVENIDOS</label>
+
+        <label class="label label-username" for="Username">Usuario</label>
+        <input type="text" id="Username" name="Usuario" title="Ingrese Usuario" value="Usuario" onFocus="if(this.value =='Usuario' ) this.value=''" onBlur="if(this.value==''){ this.value='Usuario'; } else{ this.style.color='#000'; }">
+
+        <label class="label label-password" for="Password">Contraseña</label>
+        <input type="text" id="Password" name="Password" title="Ingrese Contraseña" value="Contraseña" onFocus="if(this.value =='Contraseña' ) this.value=''" onBlur="if(this.value==''){ this.value='Contraseña'; } else{ this.style.color='#000'; }">
+
+        <input class="button" type="button" name="Boton" value="Login">
 
     </div>
 </div>

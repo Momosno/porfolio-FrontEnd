@@ -1,16 +1,72 @@
 .body{
     display: grid;
     justify-content: center;
+    align-items: center;
     width:100vw;
-    height:100vh;
+    height: 100vh;
     background-color:antiquewhite
 }
 
 .container-login{
     display: grid;
-    justify-content: center;
-    align-content: center;
+    height: 40vh;
+    width: 50vw;
     
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(3,1fr);
 
+    justify-items: center;
+
+    border-radius: 10px;
     background-color: cadetblue;
 }
+
+.titulo-login{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.label{
+    grid-column: 1/2;
+    
+}
+
+.label-username{
+    grid-area: 3/1/4/2;
+}
+
+.label-password{
+    grid-area: 5/1/6/2;
+}
+
+input{
+    width: 90%;
+    height: 1fr;
+
+}
+
+#Password{
+    grid-area: 5/2/6/5;
+
+}
+
+#Username{
+    grid-area: 3/2/4/5;
+    
+
+}
+
+input[type=text]{
+    color:#999999;
+  }
+
+input[type=text]:focus{
+    color:#000;
+  }
+
+  .button{
+    grid-area: 7/1/8/4;
+    max-width: 100px;
+    border-radius: 4px;
+  }
+
