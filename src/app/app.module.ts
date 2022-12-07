@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
     LoginComponent,
     HeaderComponent,
     AboutComponent,
+    ExperienceComponent,
 
   ],
   imports: [

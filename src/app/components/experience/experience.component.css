@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(94,94,94);
+}
+
+.container-body{
+
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row: 1fr 2fr;
+    column-gap: 50px ;
+    margin-top: 10px;
+
+    width: 88%;
+
+    border-radius: 10px;
+    background-color: rgb(131, 131, 131);
+}
+
+
+
+

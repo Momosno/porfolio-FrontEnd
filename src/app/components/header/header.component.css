@@ -2,9 +2,7 @@ header{
     display: grid;
     background-color: rgb(94, 94, 94);
     grid-template-columns: 1fr 1fr;
-    
-
-    
+        
 }
 
 .container-left{
@@ -67,6 +65,8 @@ header{
     
 }
 
+
+
 .container-banner{
     display: grid;
     position: relative;
@@ -76,14 +76,13 @@ header{
     justify-content: center;
     align-content: center;
     
-
+    
     border-radius: 15px;
     background-color: rgb(131, 131, 131);
-    width: 85%;
-    
-    
+    width: 88%;
 
 }
+
 
 
 
