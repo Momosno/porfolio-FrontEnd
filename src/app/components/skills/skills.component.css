@@ -1,0 +1,139 @@
+body{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(94,94,94);
+}
+
+.container-body{
+
+    display: grid;
+
+
+    column-gap: 50px ;
+    margin-top: 10px;
+
+
+    width: 88%;
+
+    border-radius: 10px;
+    background-color: rgb(131, 131, 131);
+
+    
+}
+
+.container-skills{
+    display: grid;
+   grid-template-rows:3fr;
+
+    align-items: center;
+    align-content: center;
+    
+
+    width: 1fr;
+}
+
+/*------*/
+.container-hs-skills{
+    display: grid;
+    grid-template-rows: 0.6fr repeat(auto-fit,minmax(2,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(4,1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+
+    align-items: center;
+    
+
+}
+
+.skills-title{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-area: 1/1/2/5;
+
+    border-bottom: 1px solid black;
+
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.graphic{
+    display: grid;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-img{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------*/
+.container-idioms{
+    display: grid;
+    grid-template-rows: 0.6fr 1fr;
+    grid-template-columns: repeat(2,1fr);
+
+    margin-top:20px;
+
+}
+
+
+.idioms-title{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-area: 1/1/2/5;
+
+    border-bottom: 1px solid black;
+
+    margin-left: 60px;
+    margin-bottom: 10px;
+
+}
+
+.idioms-img{
+    width: 100px;
+}
+
+
+
+
+
+/*------*/
+.container-lenguajes{
+    display: grid;
+    grid-template-rows: 0.6fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+
+    margin-top:20px;
+}
+
+.lenguaje-title{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-area: 1/1/2/5;
+
+    border-bottom: 1px solid black;
+
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.lenguaje-img{
+    width: 100px;
+    margin-bottom: 20px;
+}

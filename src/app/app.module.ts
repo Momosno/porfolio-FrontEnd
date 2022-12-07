@@ -7,6 +7,9 @@ import { LoginComponent } from './components/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
+import { SkillsComponent } from './components/skills/skills.component';
+
 
 
 @NgModule({
@@ -16,7 +19,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     HeaderComponent,
     AboutComponent,
     ExperienceComponent,
-
+    EducationComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,
