@@ -65,10 +65,12 @@ body{
 }
 
 .profile-picture{
+    display: grid;
     align-self: center;
     justify-self: center;
     
-    max-height: 97%;
+    height: 100%;
+    max-width: 95%;
     border-radius: 10px;
 
 }
