@@ -10,7 +10,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
-import { XpCardComponent } from './components/experience/xp-card/xp-card.component';
+import { XpCardComponent } from './components/xp-card/xp-card.component';
 
 
 

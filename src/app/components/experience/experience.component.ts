@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { XpCard } from './xp-card/i_xp-card.metadata';
+import { Card } from '../../interface/i_xp-card.metadata';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { XpCard } from './xp-card/i_xp-card.metadata';
 export class ExperienceComponent implements OnInit {
 
 
-  public cards: XpCard[] = [
+  public cards: Card[] = [
     {
       avatar: 'assets/Images/cafe code.jpg',
       titulo: "TITULO 12",

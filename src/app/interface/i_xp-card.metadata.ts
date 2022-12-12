@@ -1,4 +1,4 @@
-export interface XpCard {
+export interface Card {
     avatar: string;
     titulo: string;
     descripcion: string;
