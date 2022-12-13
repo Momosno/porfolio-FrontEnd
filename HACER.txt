@@ -1,0 +1,6 @@
+- Arreglar grid proyectos, la linea del titulo
+
+- Arreglar que se acomode uno abajo del otro los 
+grafico e imagenes de los proyectos
+
+- Arreglar grid banner
