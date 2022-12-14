@@ -10,7 +10,7 @@ body{
     display: grid;
 
 
-    column-gap: 50px ;
+    column-gap: 50px;
     margin-top: 10px;
 
 
@@ -24,29 +24,15 @@ body{
 
 .container-skills{
     display: grid;
-   grid-template-rows:3fr;
+    grid-template-rows:3fr;
 
     align-items: center;
     align-content: center;
     
-
     width: 1fr;
 }
 
-/*------*/
-.container-hs-skills{
-    display: grid;
-    grid-template-rows: 0.6fr repeat(auto-fit,minmax(2,1fr));
-    grid-template-columns: repeat(auto-fit, minmax(4,1fr));
-    column-gap: 20px;
-    row-gap: 20px;
-
-    align-items: center;
-    
-
-}
-
-.skills-title{
+.title{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -55,35 +41,29 @@ body{
     border-bottom: 1px solid black;
 
     margin-left: 60px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 25px;
+} 
 
-.graphic{
+
+/*------*/
+.container-hs-skills{
     display: grid;
+    grid-template-rows: 0.4fr repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
 
-    justify-content: center;
-    align-items: center;
+    
+    
+
 }
-
-.skill-img{
-    width: 100px;
-}
-
-
-
-
-
-
-
-
-
 
 
 
 /*------*/
 .container-idioms{
     display: grid;
-    grid-template-rows: 0.6fr 1fr;
+    grid-template-rows: 0.4fr 1fr;
     grid-template-columns: repeat(2,1fr);
 
     margin-top:20px;
@@ -91,49 +71,12 @@ body{
 }
 
 
-.idioms-title{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-area: 1/1/2/5;
-
-    border-bottom: 1px solid black;
-
-    margin-left: 60px;
-    margin-bottom: 10px;
-
-}
-
-.idioms-img{
-    width: 100px;
-}
-
-
-
-
-
 /*------*/
 .container-lenguajes{
     display: grid;
-    grid-template-rows: 0.6fr 1fr;
+    grid-template-rows: 0.4fr 1fr;
     grid-template-columns: repeat(3,1fr);
 
     margin-top:20px;
 }
 
-.lenguaje-title{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-area: 1/1/2/5;
-
-    border-bottom: 1px solid black;
-
-    margin-left: 60px;
-    margin-bottom: 10px;
-}
-
-.lenguaje-img{
-    width: 100px;
-    margin-bottom: 20px;
-}

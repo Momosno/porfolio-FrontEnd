@@ -9,15 +9,18 @@
                         <stop offset="100%" stop-color="#673ab7" />
                     </linearGradient>
                     </defs>
-                    <circle cx="90" cy="90" r="80" stroke-linecap="round" />
+                    <circle [ngStyle]="{'stroke-dashoffset': data.offset}" cx="90" cy="90" r="80" stroke-linecap="round" />
                 </svg>
+
+                
 
                 <div class="inner">
                     
-                    <span class="value">{{data.percentage}}%</span>
+                    <span class="value">{{data.percentage}}</span>
                 </div>
             </div>
 
-            <div class="text">{{data.skillName}}</div>
-     </div>
+        </div>
+        <div class="text">{{data.skillName}}</div>
 </body>
+

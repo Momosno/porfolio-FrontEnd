@@ -1,6 +1,6 @@
 body{
     
-    height: 220px;
+    height: 250px;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -60,7 +60,7 @@ circle{
     stroke: url(#GradientColor);
     stroke-width: 20px;
     stroke-dasharray: 472; /*completo 472*/
-    stroke-dashoffset: 0;
+    
 
 }
 
@@ -72,6 +72,8 @@ svg{
 
 
 .text{
+    display: block;
+    height: 40px;
     margin-top: 15px;
     display: block;
 }
