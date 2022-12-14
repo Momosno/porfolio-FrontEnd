@@ -10,7 +10,7 @@ import { Card } from '../../interface/i_xp-card.metadata';
 export class XpCardComponent implements OnInit {
 
 
-  @Input() data: Card;
+  @Input() dato: Card;
 
   constructor() {
 

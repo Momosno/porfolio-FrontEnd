@@ -1,4 +1,4 @@
-<body>
+<body *ngIf="data">
      <div class="skill">
             <div class="outer">
 
@@ -13,11 +13,11 @@
                 </svg>
 
                 <div class="inner">
-
-                 <!--   <span class="value">{{data.percentage}}%</span>-->
+                    
+                    <span class="value">{{data.percentage}}%</span>
                 </div>
             </div>
 
-            <!--<div class="text">{{data.skillName}}</div>-->
+            <div class="text">{{data.skillName}}</div>
      </div>
 </body>

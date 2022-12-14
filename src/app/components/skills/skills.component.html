@@ -10,38 +10,8 @@
                     <h2>HARD - SOFT SKILLS</h2>
                 </div>
 
-                <div class="graphic graphic-1">
-                    <img class="skill-img" src="assets\Icons\icons\airplane-engines.svg" alt="Grafico skills">
-                </div>
+                <app-circular-graphs [data]="skill" *ngFor="let skill of skills"></app-circular-graphs>
 
-                <div class="graphic graphic-2">
-                    <img class="skill-img" src="assets\Icons\icons\airplane-engines.svg" alt="Grafico skills">
-                </div>
-
-                <div class="graphic graphic-3">
-                    <img class="skill-img" src="assets\Icons\icons\airplane-engines.svg" alt="Grafico skills">
-                </div>
-
-                <div class="graphic graphic-4">
-                    <img class="skill-img" src="assets\Icons\icons\airplane-engines.svg" alt="Grafico skills">
-                </div>
-
-                <div class="graphic graphic-5">
-                    <img class="skill-img" src="assets\Icons\icons\airplane-engines.svg" alt="Grafico skills">
-                </div>
-
-                <div class="graphic graphic-6">
-                    <img class="skill-img" src="assets\Icons\icons\airplane-engines.svg" alt="Grafico skills">
-                </div>
-
-                <div class="graphic graphic-7">
-                    <img class="skill-img" src="assets\Icons\icons\airplane-engines.svg" alt="Grafico skills">
-                </div>
-
-                <div class="graphic graphic-8">
-                    <img class="skill-img" src="assets\Icons\icons\airplane-engines.svg" alt="Grafico skills">
-                </div>
-                
             </div>
 
 
@@ -51,14 +21,8 @@
                     <h2>IDIOMAS</h2>
                 </div>
 
-                <div class="graphic">
-                     <img class="idioms-img"  src="assets\Icons\icons\meta.svg" alt="Grafico idiomas">
-                </div>
+                <app-circular-graphs [data]="idiom" *ngFor="let idiom of idioms"></app-circular-graphs>
                 
-                <div class="graphic">
-                     <img class="idioms-img" src="assets\Icons\icons\meta.svg" alt="Grafico idiomas">
-                </div>
-
             </div>
 
 
@@ -68,18 +32,7 @@
                     <h2>LENGUAJES</h2>
                 </div>
 
-                <div class="graphic"> <!--HTML/CSS-->
-                     <img class="lenguaje-img"  src="assets\Icons\icons\lightning-charge.svg" alt="Grafico idiomas">
-                </div>
-
-                <div class="graphic"> <!--JAVA-->
-                    <img class="lenguaje-img"  src="assets\Icons\icons\lightning-charge.svg" alt="Grafico idiomas">
-               </div>
-
-
-                <div class="graphic"> <!--PYTHON-->
-                    <img class="lenguaje-img"  src="assets\Icons\icons\lightning-charge.svg" alt="Grafico idiomas">
-               </div>
+                <app-circular-graphs [data]="language" *ngFor="let language of languages"></app-circular-graphs>
 
 
 
