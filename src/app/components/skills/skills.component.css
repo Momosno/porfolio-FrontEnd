@@ -5,6 +5,12 @@ body{
     background-color: rgb(94,94,94);
 }
 
+.graficos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    
+}
+
 .container-body{
 
     display: grid;
@@ -24,7 +30,8 @@ body{
 
 .container-skills{
     display: grid;
-    grid-template-rows:3fr;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns: 1fr;
 
     align-items: center;
     align-content: center;

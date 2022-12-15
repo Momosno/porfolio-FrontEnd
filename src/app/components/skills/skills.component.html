@@ -7,22 +7,29 @@
                 <div class="title">
                     <h2>HARD - SOFT SKILLS</h2>
                 </div>
-                <app-circular-graphs [data]="skill" *ngFor="let skill of skills"></app-circular-graphs>
+                <div class="wrapper">
+                    <app-circular-graphs [data]="skill" *ngFor="let skill of skills"></app-circular-graphs>
+                </div>
             </div>
-
+            
+            <!-- H2 / H3-->
             <div class="container-idioms">
                 <div class="title">
                     <h2>IDIOMAS</h2>
                 </div>
-                <app-circular-graphs [data]="idiom" *ngFor="let idiom of idioms"></app-circular-graphs>
+                <div class="wrapper">
+                    <app-circular-graphs [data]="idiom" *ngFor="let idiom of idioms"></app-circular-graphs>
+                </div>
             </div>
 
+            <!-- H2 / H3-->
             <div class="container-lenguajes">
                 <div class="title">
                     <h2>LENGUAJES</h2>
                 </div>
-                <app-circular-graphs [data]="language" *ngFor="let language of languages"></app-circular-graphs>
-
+                <div class="wrapper">
+                    <app-circular-graphs [data]="language" *ngFor="let language of languages"></app-circular-graphs>
+                </div>
 
 
             </div>
