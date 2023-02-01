@@ -20,7 +20,15 @@ PALETA DE COLORES
 *{
     margin: 0;
     padding:0;
-    background-color: antiquewhite;
+   
+    
+    
+    display: grid;
+    background-image: linear-gradient(270deg, #7fd4ff 0, #2884f9 50%, #003b81 100%);
+      
+          
+
+
 }
 
 

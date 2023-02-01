@@ -15,6 +15,7 @@ import { CircularGraphsComponent } from './components/circular-graphs/circular-g
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { CircularGraphsComponent } from './components/circular-graphs/circular-g
     ProyectsComponent,
     XpCardComponent,
     CircularGraphsComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 header{
     display: grid;
-    background-color: rgb(94, 94, 94);
+    
     grid-template-columns: 1fr 1fr;
         
 }
@@ -11,7 +11,8 @@ header{
     
     align-content: center;
     justify-content: center;
-
+    background-color: black;
+    color:aliceblue;
     
 }
 
@@ -35,6 +36,8 @@ header{
     align-content: stretch;
     align-items: center;
     justify-items: center;
+    background-color: black;
+    color:aliceblue;
 
 }
 
@@ -43,29 +46,92 @@ header{
     justify-content: center;
     align-content: center;
     width: 25px;     
-}
-
-.social:hover{
     -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
     filter: invert(100%);
 }
 
-.button-login{
+.social:hover{
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg)
+}
+
+
+
+
+
+
+.button-login {
     margin-right: 70px;
     grid-column: 5/6;
 
-    background-color: #0087A8 ;
-    border-radius: 5px;
-    width: 75px;
-    height: 40px;
-}
+ 
 
-.button-login:hover{
-    background-color: #00C6F5 ;
-    
-}
+    width: 100px;
+    height: 50px;
+
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+ 
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+   
+  }
+  
+  .button-login:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button-login:main,
+  .button-login:focus {
+    user-select: auto;
+  }
+  
+  .button-login:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button-login:disabled {
+    cursor: auto;
+  }
+  
+
+
 
 .container-banner{
+    margin-top: 8px;
     display: grid;
     grid-area: 2/1/3/3;
     align-self: center;
