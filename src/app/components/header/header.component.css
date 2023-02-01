@@ -98,35 +98,35 @@ header{
    
   }
   
-  .button-login:after {
-    background-clip: padding-box;
-    background-color: #1CB0F6;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    bottom: -4px;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
-  
-  .button-login:main,
-  .button-login:focus {
-    user-select: auto;
-  }
-  
-  .button-login:hover:not(:disabled) {
-    filter: brightness(1.1);
-    -webkit-filter: brightness(1.1);
-  }
-  
-  .button-login:disabled {
-    cursor: auto;
-  }
-  
+.button-login:after {
+background-clip: padding-box;
+background-color: #1CB0F6;
+border: solid transparent;
+border-radius: 16px;
+border-width: 0 0 4px;
+bottom: -4px;
+content: "";
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+z-index: -1;
+}
+
+.button-login:main,
+.button-login:focus {
+user-select: auto;
+}
+
+.button-login:hover:not(:disabled) {
+filter: brightness(1.1);
+-webkit-filter: brightness(1.1);
+}
+
+.button-login:disabled {
+cursor: auto;
+}
+
 
 
 
@@ -138,13 +138,28 @@ header{
     justify-self: center;
     justify-content: center;
     align-content: center;
+
+    position: relative;
     
     
     border-radius: 15px;
-    background-color: rgb(131, 131, 131);
     width: 95%;
 
 }
+
+.button-edit{
+    position: absolute;
+    left:93%;
+    top:5%;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #13aa52;
+
+    position: grid;
+}
+
 
 .header-banner{
     width:98.5%;
@@ -154,4 +169,6 @@ header{
     z-index: 1;
 
     border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+

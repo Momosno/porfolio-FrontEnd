@@ -6,7 +6,13 @@
                 <h2>EDUCACION</h2>
             </div>
             
-            <app-xp-card [dato]="card" *ngFor="let card of cards;"></app-xp-card>
+            <app-xp-card class="app" [dato]="card" *ngFor="let card of cards;">
+
+                <button class="button-edit" type= button role="button">
+                    <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
+                </button>
+
+            </app-xp-card>
             
 
         </div>
