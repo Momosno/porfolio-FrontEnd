@@ -1,6 +1,8 @@
-- Arreglar grid proyectos, la linea del titulo
+- For de imagenes de proyecto, que sea un muestreo de array
+- *Ngif para login? o url aparte
 
-- Arreglar que se acomode uno abajo del otro los 
-grafico e imagenes de los proyectos
 
-- Arreglar grid banner
+
+https://stackblitz.com/edit/open-only-specific-input-field-created-with-ngfor-loop-d-qhxvrj?file=src%2Fapp%2Fapp.component.html,src%2Fapp%2Fapp.component.ts
+https://codecraft.tv/courses/angular/built-in-directives/ngfor/
+https://blog.angular-university.io/angular-2-ngfor/

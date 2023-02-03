@@ -12,6 +12,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { XpCardComponent } from './components/xp-card/xp-card.component';
 import { CircularGraphsComponent } from './components/circular-graphs/circular-graphs.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 
 
@@ -28,6 +29,7 @@ import { CircularGraphsComponent } from './components/circular-graphs/circular-g
     ProyectsComponent,
     XpCardComponent,
     CircularGraphsComponent,
+    ProyectoComponent,
 
   ],
   imports: [

@@ -2,9 +2,11 @@ body{
     display: grid;
     justify-items: center;
     align-items: center;
+    margin-bottom: 15px;
 
-
-
+}
+.app{
+    position: relative;
 }
 
 .container-body{
@@ -32,9 +34,10 @@ body{
 
 .container-proyectos{
     display: grid;
-    grid-template-rows: 0.1fr repeat(2,1fr);
+    grid-template-rows: 0.1fr 1fr;
     grid-template-columns: 1fr;
     row-gap: 15px;
+    margin-bottom: 15px;
     
     align-content: center;
     justify-content: center;
@@ -55,54 +58,3 @@ body{
  
     
 }
-
-
-.container-proyecto{
-    display: grid;
-    grid-template-columns: 97%;
-    grid-template-rows: 0.2fr 0.4fr 1fr;
-    width: 100%;
-
-}
-
-.proyect-title{
-    justify-self: center;
-}
-
-.proyecto1{
-    display: grid;
-    justify-content: center;
-
-}
-
-.proyecto2{    
-    display: grid;
-   
-    justify-content: center; 
-    margin-bottom: 10px;
-}
-
-.container-img{
-    display: grid;
-    grid-area:3/1/4/2;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(auto-fit,300px);
-
-    justify-content:center;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-
-    column-gap: 20px;
-    row-gap: 20px;
-
-}
-
-
-
-
-
-img{
-    width: 200px;
-    border-radius: 15px;
-    }

@@ -1,0 +1,27 @@
+<div class="container-proyecto" *ngIf="datas">
+
+    <div class="proyect-title">
+        <h3>{{datas.titulo}}</h3>
+    </div>
+
+    <p class="proyect-paragraph">{{datas.descripcion}}</p>
+
+    <!--VER MUESTREO IMAGENEES CON FOR data.imagenes[]-->
+    <div class="container-img">
+        <img class="imagen" src={{datas.imagenes}} alt="Imagen Proyecto">
+    </div>
+
+
+
+
+    <button class="button-edit" type= button role="button">
+        <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
+    </button>
+    
+    <button class="button-delete" type= button role="button">
+        <img class="img-edit" src="assets/Icons/icons/x-lg.svg" alt="Boton de edicion" >
+    </button>
+    
+    
+
+</div>

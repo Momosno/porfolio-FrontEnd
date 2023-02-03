@@ -8,42 +8,9 @@
             </div>
 
 
-            <div class="container-proyecto proyecto1">
+         <app-proyecto class="app" [datas]="proyecto" *ngFor="let proyecto of proyectos;"></app-proyecto>
 
-                <div class="proyect-title">
-                    <h3>Proyecto FULLSTACK</h3>
-                </div>
-
-                <p class="proyect-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, est laborum, ipsa quisquam quidem ut quibusdam cupiditate quas beatae nemo dolor. Laudantium sequi nihil veritatis odio vel magnam porro ad?</p>
-
-                <div class="container-img">
-                    <img src="assets\Images\unknown.png" alt="Imagen Proyecto">
-                    <img src="assets\Images\unknown.png" alt="Imagen Proyecto">
-                    <img src="assets\Images\unknown.png" alt="Imagen Proyecto">
-
-                </div>
-
-            </div>
-
-            <!--SIGUEINTE PROYECTO-->
-
-            <div class="container-proyecto proyecto2">
-
-            
-                <div class="proyect-title">
-                    <h3>Proyecto PYTHON</h3>
-                </div>
-                
-                <p class="proyect-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, est laborum, ipsa quisquam quidem ut quibusdam cupiditate quas beatae nemo dolor. Laudantium sequi nihil veritatis odio vel magnam porro ad?</p>
-
-                <div class="container-img">
-                    <img src="assets\Images\unknown.png" alt="Imagen Proyecto">
-                    <img src="assets\Images\unknown.png" alt="Imagen Proyecto">
-                    <img src="assets\Images\unknown.png" alt="Imagen Proyecto">
-
-                </div>
-
-            </div>
+           
         </div>
     </div>
 </body>
