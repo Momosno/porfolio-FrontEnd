@@ -13,6 +13,7 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
 import { XpCardComponent } from './components/xp-card/xp-card.component';
 import { CircularGraphsComponent } from './components/circular-graphs/circular-graphs.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 
 
@@ -31,12 +32,14 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
     CircularGraphsComponent,
     ProyectoComponent,
 
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

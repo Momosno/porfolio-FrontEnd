@@ -6,3 +6,7 @@
 https://stackblitz.com/edit/open-only-specific-input-field-created-with-ngfor-loop-d-qhxvrj?file=src%2Fapp%2Fapp.component.html,src%2Fapp%2Fapp.component.ts
 https://codecraft.tv/courses/angular/built-in-directives/ngfor/
 https://blog.angular-university.io/angular-2-ngfor/
+
+
+
+https://www.youtube.com/watch?v=uvx0F1-YClU&ab_channel=DamianSireDesarrollo
