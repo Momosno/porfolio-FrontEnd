@@ -14,4 +14,11 @@ export class LoginComponent implements OnInit {
     this.loginservice.add("prueba");
   }
 
+  funcion(): void {
+    console.log("hola")
+  }
+
+
+
+
 }
