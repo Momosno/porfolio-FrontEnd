@@ -1,16 +1,47 @@
+<!-- <div class="body">
+  <h2 class="titulo-login" for="Titulo">BIENVENIDOS</h2>
+    <form  #myForm="ngForm" (ngSubmit)="submit(myForm)" id="form" class="container-login" method="">  -->
+        <!-- metodos: action (ubicaciion de deonde procesara esta info) y method(POST/GET)-->
+        <!--name = nombre variable, id= denominacion especifica etiqueta-->
+
+    <!-- <label for="Username" class="label label-username" for="Username">Usuario</label>
+    <input class="label-username" type="text" name="Usuario" title="Ingrese Usuario" value="Usuario" #username="ngModel" ngModel
+      onFocus="if(this.value =='Usuario' ) this.value=''"
+      onBlur="if(this.value==''){ this.value='Usuario'; } else{ this.style.color='#000'; }">
+
+    <label class="label-password" for="Password" class="label label-password" for="Password">Contraseña</label>
+    <input type="password"  name="Password" title="Ingrese Contraseña" value="Contraseña" #password="ngModel" ngModel
+      onFocus="if(this.value =='Contraseña' ) this.value=''"
+      onBlur="if(this.value==''){ this.value='Contraseña'; } else{ this.style.color='#000'; }" >
+
+    <button class="button btn btn-success" type="submit" name="Boton" value="Login">Login</button>
+
+  </form>
+</div> -->
 <div class="body">
-    <form class="container-login" action=""> <!-- metodos: action (ubicaciion de deonde procesara esta info) y method(POST/GET)-->
-        <label class="titulo-login" for="Titulo">BIENVENIDOS</label>
+<form><br><br><br>
+    <h1 class="h3 mb-3 fw-normal">Inicio de Sesion
+    </h1>
 
-        <label for="Username" class="label label-username" for="Username">Usuario</label>
-        <input type="text" id="Username" name="Usuario" title="Ingrese Usuario" value="Usuario" onFocus="if(this.value =='Usuario' ) this.value=''" onBlur="if(this.value==''){ this.value='Usuario'; } else{ this.style.color='#000'; }">
+    <div class="form-floating">
+      <input type="email" class="form-control" type="text" name="Usuario" title="Ingrese Usuario" value="Usuario" #username="ngModel" ngModel
+      onFocus="if(this.value =='Usuario' ) this.value=''"
+      onBlur="if(this.value==''){ this.value='Usuario'; } else{ this.style.color='#000'; }">
+      <label for="floatingInput">Usuario</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control"type="password"  name="Password" title="Ingrese Contraseña" value="Contraseña" #password="ngModel" ngModel
+      onFocus="if(this.value =='Contraseña' ) this.value=''"
+      onBlur="if(this.value==''){ this.value='Contraseña'; } else{ this.style.color='#000'; }">
+      <label for="floatingPassword">Contraseña</label>
+    </div>
 
-        <label for="Password" class="label label-password" for="Password">Contraseña</label>
-        <input type="password" id="Password" name="Password" title="Ingrese Contraseña" value="Contraseña" onFocus="if(this.value =='Contraseña' ) this.value=''" onBlur="if(this.value==''){ this.value='Contraseña'; } else{ this.style.color='#000'; }">
-
-        <button class="button btn btn-success" type="submit" name="Boton" value="Login" (click)=funcion()>Login</button>
-
-    </form>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
 </div>
-
-

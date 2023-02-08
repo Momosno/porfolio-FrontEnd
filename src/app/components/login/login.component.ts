@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Loginservice } from 'src/app/services/login.service';
+import { FormControl } from '@angular/forms';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -14,8 +17,11 @@ export class LoginComponent implements OnInit {
     this.loginservice.add("prueba");
   }
 
-  funcion(): void {
-    console.log("hola")
+  submit(myForm: NgForm): void {
+    console.log("Form submited");
+    console.log(myForm.value);
+
+
   }
 
 

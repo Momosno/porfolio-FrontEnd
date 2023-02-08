@@ -1,7 +1,10 @@
 .body{
     display: grid;
     justify-content: center;
+    justify-items: center;
     align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
     width:100vw;
     height: 100vh;
     background-color:antiquewhite
@@ -14,6 +17,7 @@
     
     grid-template-rows: repeat(8,1fr);
     grid-template-columns: repeat(3,1fr);
+    align-self:first baseline;
 
     justify-items: center;
 
@@ -24,10 +28,11 @@
 }
 
 .titulo-login{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    font-size: x-large;
-    margin-top: 5px;
+    display: grid;
+    justify-content: center;
+    align-self: end;
+    margin-bottom: 20px;
+
 }
 
 .label{
