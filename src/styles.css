@@ -9,6 +9,10 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+ .prueba{
+  background-image: linear-gradient(270deg, #7fd4ff 0, #2884f9 50%, #003b81 100%) !important;
+ }
+
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -23,6 +27,7 @@
   
   body {
     margin: 0;
+    background-color: transparent !important;
   }
   
   /**
@@ -246,6 +251,10 @@
     padding: 0; /* 3 */
     white-space: normal; /* 1 */
   }
+
+ .container-experiences, .container-education, .container-skills, .container-proyectos{
+  padding: 2em !important;
+ }
   
   /**
    * Add the correct vertical alignment in Chrome, Firefox, and Opera.

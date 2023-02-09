@@ -39,7 +39,7 @@ body{
 grid-template-columns: 1fr;
 grid-template-rows: 1fr;
 border-bottom: 1px solid antiquewhite;
-margin-left: 60px;
+/* margin-left: 60px; */
 margin-bottom: 10px;
 }
 

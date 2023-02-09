@@ -9,21 +9,20 @@ import { NgForm } from '@angular/forms';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
   constructor(private loginservice: Loginservice) { }
 
-  ngOnInit(): void {
-    this.loginservice.add("prueba");
-  }
-
   submit(myForm: NgForm): void {
-    console.log("Form submited");
     console.log(myForm.value);
+    console.log(myForm.value.usuario);
+    console.log(myForm.value.password);
+
+    //Validacion
 
 
   }
-
+  // [(ngModel)]="lado"
 
 
 

@@ -1,47 +1,26 @@
-<!-- <div class="body">
-  <h2 class="titulo-login" for="Titulo">BIENVENIDOS</h2>
-    <form  #myForm="ngForm" (ngSubmit)="submit(myForm)" id="form" class="container-login" method="">  -->
-        <!-- metodos: action (ubicaciion de deonde procesara esta info) y method(POST/GET)-->
-        <!--name = nombre variable, id= denominacion especifica etiqueta-->
-
-    <!-- <label for="Username" class="label label-username" for="Username">Usuario</label>
-    <input class="label-username" type="text" name="Usuario" title="Ingrese Usuario" value="Usuario" #username="ngModel" ngModel
-      onFocus="if(this.value =='Usuario' ) this.value=''"
-      onBlur="if(this.value==''){ this.value='Usuario'; } else{ this.style.color='#000'; }">
-
-    <label class="label-password" for="Password" class="label label-password" for="Password">Contraseña</label>
-    <input type="password"  name="Password" title="Ingrese Contraseña" value="Contraseña" #password="ngModel" ngModel
-      onFocus="if(this.value =='Contraseña' ) this.value=''"
-      onBlur="if(this.value==''){ this.value='Contraseña'; } else{ this.style.color='#000'; }" >
-
-    <button class="button btn btn-success" type="submit" name="Boton" value="Login">Login</button>
-
-  </form>
-</div> -->
 <div class="body">
-<form><br><br><br>
+<form #myForm="ngForm" (ngSubmit)="submit(myForm)" method=""><br><br><br>
     <h1 class="h3 mb-3 fw-normal">Inicio de Sesion
     </h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" type="text" name="Usuario" title="Ingrese Usuario" value="Usuario" #username="ngModel" ngModel
-      onFocus="if(this.value =='Usuario' ) this.value=''"
-      onBlur="if(this.value==''){ this.value='Usuario'; } else{ this.style.color='#000'; }">
+      <input type="email" class="form-control" type="text" name="usuario" title="Ingrese Usuario" value="Usuario" #username="ngModel" ngModel>
       <label for="floatingInput">Usuario</label>
-    </div>
+    </div><br>
     <div class="form-floating">
-      <input type="password" class="form-control"type="password"  name="Password" title="Ingrese Contraseña" value="Contraseña" #password="ngModel" ngModel
-      onFocus="if(this.value =='Contraseña' ) this.value=''"
-      onBlur="if(this.value==''){ this.value='Contraseña'; } else{ this.style.color='#000'; }">
+      <input type="password" class="form-control" type="password"  name="password" title="Ingrese Contraseña" value="Contraseña" #password="ngModel" ngModel>
       <label for="floatingPassword">Contraseña</label>
-    </div>
+    </div><br>
 
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-  </form>
-</div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend ">
+        <div class="input-group-text">
+          <input type="checkbox" aria-label="Checkbox for following text input">
+        </div>
+      </div>
+      Remember me
+    </div><br>
+    <button class="w-100 btn btn-m btn-primary" type="submit">Sign in</button>
+</form>
+   

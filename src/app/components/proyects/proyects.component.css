@@ -9,6 +9,10 @@ body{
     position: relative;
 }
 
+.container-experiences, .container-education, .container-skills, .container-proyectos{
+    padding: 2em !important;
+   }
+
 .container-body{
 
     display: grid;
@@ -45,6 +49,9 @@ body{
     width: 100%;
 }
 
+.titulo{
+    margin-left: 0;
+}
 
 .proyects-title{
     display: grid;
@@ -54,7 +61,8 @@ body{
 
     border-bottom: 1px solid antiquewhite;
 
-    margin-left: 60px;
+    /* margin-left: 60px; */
+    
  
     
 }
