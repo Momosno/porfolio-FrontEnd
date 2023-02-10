@@ -76,4 +76,9 @@ svg{
     height: 40px;
     margin-top: 15px;
     display: block;
+    color: antiquewhite;
+}
+
+.value{
+    color: antiquewhite;
 }

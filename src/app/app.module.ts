@@ -16,6 +16,7 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { MoodalEditComponent } from './components/moodal-edit/moodal-edit.component';
 
 
 
@@ -33,6 +34,7 @@ import { FormsModule } from '@angular/forms';
     XpCardComponent,
     CircularGraphsComponent,
     ProyectoComponent,
+    MoodalEditComponent,
 
 
   ],

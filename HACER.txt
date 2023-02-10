@@ -13,3 +13,7 @@ https://www.youtube.com/watch?v=uvx0F1-YClU&ab_channel=DamianSireDesarrollo
 
 
 PASAJE A JSON
+
+
+
+MODAL PARA EDICION

@@ -252,9 +252,7 @@
     white-space: normal; /* 1 */
   }
 
- .container-experiences, .container-education, .container-skills, .container-proyectos{
-  padding: 2em !important;
- }
+
   
   /**
    * Add the correct vertical alignment in Chrome, Firefox, and Opera.

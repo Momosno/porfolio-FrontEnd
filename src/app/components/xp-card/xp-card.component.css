@@ -24,8 +24,8 @@ hr{
 
 .button-edit{
     position: absolute;
-    left: 90%;
-    top:12%;
+    right: 5em;
+    top:0;
     z-index: 2;
     height: 50px;
     width: 50px;
@@ -37,8 +37,8 @@ hr{
 
 .button-delete{
     position: absolute;
-    left:95%;
-    top:12%;
+    right: 1em;
+    top:0;
     z-index: 2;
     height: 50px;
     width: 50px;
