@@ -1,0 +1,37 @@
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Edicion de campo</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.close()"></button>
+	</div>
+	<div class="modal-body">
+		<form>
+			<div class="mb-3">
+				<label for="texto">Editar nombre</label>
+				<div class="input-group">
+					<input
+						id="texto"
+						class="form-control"
+						placeholder="yyyy-mm-dd"
+						name="editor"
+						
+					/>
+					
+                    
+            <!-- <button class="button-edit-nombre" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                HOLA
+                <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
+            </button> -->
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+	</div>
+</ng-template>
+
+<button class="button-edit-nombre" (click)="open(content)">
+	<img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
+</button>
+
+<pre>{{ closeResult }}</pre>

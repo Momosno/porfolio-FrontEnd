@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
   selector: 'app-about',
@@ -8,25 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   /*DECLARO VARIABLES*/
+  miPortfolio: any;
 
+  constructor(private datosPortfolio: PortfolioService) { }
+  //private datosPortfolio: PortfolioService) --> injecta datos
+  //en el componente desde ese servicio y se los puede usar
 
-  public parrafo: string;
-  public nombre: string;
-  public resumen: string;
-
-  constructor() {
-    /*LES DOY VALOR     */
-
-    this.resumen = "TECNICO EN ELECTRONICA - PROGRAMADOR - FULLSTACK DEVELOPER JR"
-    this.nombre = "D'AGOSTINO ULISES"
-    this.parrafo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus sed, incidunt, enim voluptatem a nesciunt fuga aut dolorem quos nostrum quaerat! Exercitationem voluptate quos placeat perspiciatis, officiis ratione. Adipisci minus, molestiae sint optio quis, doloribus eligendi earum quia nisi sit ex. Accusamus consequatur animi quo quasi neque, iste dignissimos."
-
-
-
-
+  ngOnInit(): void { //apenas inicio el componente
+    this.datosPortfolio.obtenerDatos().subscribe(data => { console.log(data); this.miPortfolio = data });
+    //INTERPOLACION - SUSITUIR UNA EXPRESION POR UN VALOR STRING EN LA VISTA HTML
   }
-
-  ngOnInit(): void {
-  }
-
 }
+
+
+
+

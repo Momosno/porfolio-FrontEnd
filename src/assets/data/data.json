@@ -1,0 +1,136 @@
+{
+  "name": "ULISES D'AGOSTINO",
+  "resumen": "TECNICO EN ELECTRONICA - PROGRAMADOR - FULLSTACK DEVELOPER JR",
+  "parrafo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus sed, incidunt, enim voluptatem a nesciunt fuga aut dolorem quos nostrum quaerat! Exercitationem voluptate quos placeat perspiciatis, officiis ratione. Adipisci minus, molestiae sint optio quis, doloribus eligendi earum quia nisi sit ex. Accusamus consequatur animi quo quasi neque, iste dignissimos.",
+  "profile-img": "METER IMAGEN",
+
+  "educacion": [{
+      "titulo": "Titulo 1",
+      "resumen": "wasd 1",
+      "img": "IMAGEN"
+    },
+    {
+      "titulo": "Titulo 2",
+      "resumen": "wasd 2",
+      "img": "IMAGEN"
+    },
+    {
+      "titulo": "Titulo 3",
+      "resumen": "wasd 3",
+      "img": "IMAGEN"
+    },
+    {
+      "titulo": "Titulo 4",
+      "resumen": "wasd 4",
+      "img": "IMAGEN"
+    }
+  ],
+  "experiencia": [{
+      "titulo": "Titulo 1",
+      "resumen": "wasd 1",
+      "img": "IMAGEN"
+    },
+    {
+      "titulo": "Titulo 2",
+      "resumen": "wasd 2",
+      "img": "IMAGEN"
+    },
+    {
+      "titulo": "Titulo 3",
+      "resumen": "wasd 3",
+      "img": "IMAGEN"
+    },
+    {
+      "titulo": "Titulo 4",
+      "resumen": "wasd 4",
+      "img": "IMAGEN"
+    }
+  ],
+
+  "skills": [{
+      "percentage": "10%",
+      "skillName": "HS 01",
+      "offset": "50"
+    },
+    {
+      "percentage": "10%",
+      "skillName": "HS 02",
+      "offset": "50"
+    },
+    {
+      "percentage": "10%",
+      "skillName": "HS 03",
+      "offset": "50"
+    },
+    {
+      "percentage": "10%",
+      "skillName": "HS 04",
+      "offset": "50"
+    },
+    {
+      "percentage": "10%",
+      "skillName": "SS 01",
+      "offset": "50"
+    },
+    {
+      "percentage": "10%",
+      "skillName": "SS 02",
+      "offset": "50"
+    },
+    {
+      "percentage": "10%",
+      "skillName": "SS 03",
+      "offset": "50"
+    },
+    {
+      "percentage": "10%",
+      "skillName": "SS 04",
+      "offset": "50"
+    },
+
+
+
+    {
+      "percentage": "B2",
+      "skillName": "INGLES",
+      "offset": "80"
+    },
+    {
+      "percentage": "C1",
+      "skillName": "ALEMAN",
+      "offset": "80"
+    },
+
+
+
+    {
+      "percentage": "Junior",
+      "skillName": "HTML/CSS",
+      "offset": "150"
+    },
+    {
+      "percentage": "Junior",
+      "skillName": "PYTHON",
+      "offset": "150"
+    },
+    {
+      "percentage": "Junior",
+      "skillName": "JAVA",
+      "offset": "150"
+    }
+  ],
+  "proyectos":[
+    {
+        "titulo": "Proyecto FLLSTACK",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit, magni sint iusto ratione reiciendis exercitationem alias asperiores atque quisquam, quae nulla libero voluptatum dicta maiores nihil. Illum, ipsum quasi!",
+        "imagenes": "assets/Images/unknown.png"
+
+      },
+      {
+        "titulo": "Proyecto Python",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit, magni sint iusto ratione reiciendis exercitationem alias asperiores atque quisquam, quae nulla libero voluptatum dicta maiores nihil. Illum, ipsum quasi!",
+        "imagenes": "assets/Images/unknown.png"
+ 
+      }
+  ]
+}

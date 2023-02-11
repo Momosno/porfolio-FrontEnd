@@ -13,7 +13,7 @@
 
         <div class="summary">
             <h3> 
-                <b>{{resumen}}</b> 
+                <b>{{miPortfolio.resumen}}</b> 
             </h3>
             
 
@@ -24,21 +24,15 @@
         </div>
 
         <div class="name">
-            <h1>{{nombre}}</h1>
+            <h1>{{miPortfolio.name}}</h1>
 
-
-
-
-
-
-            <!-- <button class="button-edit-nombre" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                HOLA
+           <button class="button-edit-nombre" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
-            </button> -->
+            </button> 
         </div>
 
         <div class="paragraph">
-            <h3>{{parrafo}}</h3>
+            <h3>{{miPortfolio.parrafo}}</h3>
             <button class="button-edit-paragraph" type= button role="button">
                 <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
             </button>
@@ -46,8 +40,6 @@
         </div>
     </div>
 
-    <app-moodal-edit></app-moodal-edit>
-  
 
 
 
