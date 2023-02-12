@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Card } from '../../interface/i_xp-card.metadata';
+
 
 @Component({
   selector: 'app-xp-card',
@@ -10,13 +10,14 @@ import { Card } from '../../interface/i_xp-card.metadata';
 export class XpCardComponent implements OnInit {
 
 
-  @Input() dato: Card;
+  @Input() item: any;
 
   constructor() {
 
 
   }
   ngOnInit(): void {
+    console.log(this.item)
   }
 
 }

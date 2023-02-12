@@ -26,22 +26,22 @@
     }
   ],
   "experiencia": [{
-      "titulo": "Titulo 1",
+      "titulo": "EXPERIENCIA 1",
       "resumen": "wasd 1",
       "img": "IMAGEN"
     },
     {
-      "titulo": "Titulo 2",
+      "titulo": "EXPERIENCIA 2",
       "resumen": "wasd 2",
       "img": "IMAGEN"
     },
     {
-      "titulo": "Titulo 3",
+      "titulo": "EXPERIENCIA 3",
       "resumen": "wasd 3",
       "img": "IMAGEN"
     },
     {
-      "titulo": "Titulo 4",
+      "titulo": "EXPERIENCIA 4",
       "resumen": "wasd 4",
       "img": "IMAGEN"
     }
@@ -86,7 +86,9 @@
       "percentage": "10%",
       "skillName": "SS 04",
       "offset": "50"
-    },
+    }
+  ],
+  "idioms": [
 
 
 
@@ -99,9 +101,10 @@
       "percentage": "C1",
       "skillName": "ALEMAN",
       "offset": "80"
-    },
+    }
+  ],
 
-
+  "lenguajes": [
 
     {
       "percentage": "Junior",
@@ -119,18 +122,17 @@
       "offset": "150"
     }
   ],
-  "proyectos":[
-    {
-        "titulo": "Proyecto FLLSTACK",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit, magni sint iusto ratione reiciendis exercitationem alias asperiores atque quisquam, quae nulla libero voluptatum dicta maiores nihil. Illum, ipsum quasi!",
-        "imagenes": "assets/Images/unknown.png"
+  "proyectos": [{
+      "titulo": "Proyecto FLLSTACK",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit, magni sint iusto ratione reiciendis exercitationem alias asperiores atque quisquam, quae nulla libero voluptatum dicta maiores nihil. Illum, ipsum quasi!",
+      "imagenes": "assets/Images/unknown.png"
 
-      },
-      {
-        "titulo": "Proyecto Python",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit, magni sint iusto ratione reiciendis exercitationem alias asperiores atque quisquam, quae nulla libero voluptatum dicta maiores nihil. Illum, ipsum quasi!",
-        "imagenes": "assets/Images/unknown.png"
- 
-      }
+    },
+    {
+      "titulo": "Proyecto Python",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit, magni sint iusto ratione reiciendis exercitationem alias asperiores atque quisquam, quae nulla libero voluptatum dicta maiores nihil. Illum, ipsum quasi!",
+      "imagenes": "assets/Images/unknown.png"
+
+    }
   ]
 }

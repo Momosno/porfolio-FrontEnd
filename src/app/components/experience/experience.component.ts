@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from '../../interface/i_xp-card.metadata';
+import { PortfolioService } from 'src/app/services/portfolio.service';
+
 
 
 @Component({
@@ -9,62 +10,22 @@ import { Card } from '../../interface/i_xp-card.metadata';
 })
 export class ExperienceComponent implements OnInit {
 
-
-  public cards: Card[] = [
-    {
-      avatar: 'assets/Images/cafe code.jpg',
-      titulo: "TITULO 12",
-      descripcion: "WASD 12",
-    },
-    {
-      avatar: 'assets/Images/cafe code.jpg',
-      titulo: "TITULO 13",
-      descripcion: "WASD 13",
-    },
-    {
-      avatar: 'assets/Images/cafe code.jpg',
-      titulo: "TITULO 14",
-      descripcion: "WASD 14",
-    },
-    {
-      avatar: 'assets/Images/cafe code.jpg',
-      titulo: "TITULO 15",
-      descripcion: "WASD 15",
-    },
-  ]
-
-  cartas = [
-    {
-      avatar: 'assets/Images/cafe code.jpg',
-      titulo: "TITULO 12",
-      descripcion: "WASD 12",
-    },
-    {
-      avatar: 'assets/Images/cafe code.jpg',
-      titulo: "TITULO 13",
-      descripcion: "WASD 13",
-    },
-    {
-      avatar: 'assets/Images/cafe code.jpg',
-      titulo: "TITULO 14",
-      descripcion: "WASD 14",
-    },
-    {
-      avatar: 'assets/Images/cafe code.jpg',
-      titulo: "TITULO 15",
-      descripcion: "WASD 15",
-    },
-  ]
+  experienceList: any;
 
 
-
-  constructor() {
+  constructor(private datosPortfolio: PortfolioService) {
 
 
 
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { //apenas inicio el componente
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
+
+      this.experienceList = data.experiencia;
+
+    });
+    //INTERPOLACION - SUSITUIR UNA EXPRESION POR UN VALOR STRING EN LA VISTA HTML
   }
 
 }

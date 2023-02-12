@@ -1,8 +1,11 @@
-<div class="container-xp" *ngIf="dato">
-    <img class="imagen " src="{{dato.avatar}}" alt="Imagen ">
-    <h3>{{dato.titulo}}</h3>
-    <p>{{dato.descripcion}}</p>
+<div class="container-xp" *ngIf="item">
+    <img class="imagen " src="{{item.img}}" alt="Imagen ">
+    <h3>{{item.titulo}}</h3>
+    <p>{{item.resumen}}</p>
 </div>
+
+
+
 
 <button class="button-edit" type= button role="button">
     <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
