@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Proyect } from 'src/app/interface/proyect';
+import { PortfolioService } from 'src/app/services/portfolio.service';
+
 
 @Component({
   selector: 'app-proyects',
@@ -8,24 +9,16 @@ import { Proyect } from 'src/app/interface/proyect';
 })
 export class ProyectsComponent implements OnInit {
 
-  public proyectos: Proyect[] = [
-    {
-      titulo: "Proyecto FLLSTACK",
-      descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit, magni sint iusto ratione reiciendis exercitationem alias asperiores atque quisquam, quae nulla libero voluptatum dicta maiores nihil. Illum, ipsum quasi!",
-      imagenes: "assets/Images/unknown.png",
-      //imagenes: ["assets/Images/unknown.png", "assets/Images/unknown.png"],
-    },
-    {
-      titulo: "Proyecto Python",
-      descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit, magni sint iusto ratione reiciendis exercitationem alias asperiores atque quisquam, quae nulla libero voluptatum dicta maiores nihil. Illum, ipsum quasi!",
-      imagenes: "assets/Images/unknown.png",
-      //imagenes: ["assets/Images/unknown.png", "assets/Images/unknown.png"],
-    },
-  ]
+  proyectosList: any;
 
-  constructor() { }
+  constructor(private datosPortfolio: PortfolioService) { }
+  ngOnInit(): void { //apenas inicio el componente
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
 
-  ngOnInit(): void {
+      this.proyectosList = data.proyectos;
+
+    });
+    //INTERPOLACION - SUSITUIR UNA EXPRESION POR UN VALOR STRING EN LA VISTA HTML
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CircleValues } from 'src/app/interface/circular-graphs.metadata';
+
 
 
 @Component({
@@ -9,7 +9,7 @@ import { CircleValues } from 'src/app/interface/circular-graphs.metadata';
 })
 export class CircularGraphsComponent implements OnInit {
 
-  @Input() data: CircleValues;
+  @Input() data: any;
 
   constructor() { }
 

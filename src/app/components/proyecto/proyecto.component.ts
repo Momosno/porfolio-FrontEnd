@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Proyect } from 'src/app/interface/proyect';
+
 
 @Component({
   selector: 'app-proyecto',
@@ -9,11 +9,12 @@ import { Proyect } from 'src/app/interface/proyect';
 export class ProyectoComponent implements OnInit {
 
 
-  @Input() datas: Proyect;
+  @Input() data: any;
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.data)
   }
 
 }

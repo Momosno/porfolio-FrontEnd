@@ -1,14 +1,14 @@
-<div class="container-proyecto" *ngIf="datas">
+<div class="container-proyecto" *ngIf="data">
 
     <div class="proyect-title">
-        <h3>{{datas.titulo}}</h3>
+        <h3>{{data.titulo}}</h3>
     </div>
 
-    <p class="proyect-paragraph">{{datas.descripcion}}</p>
+    <p class="proyect-paragraph">{{data.descripcion}}</p>
 
     <!--VER MUESTREO IMAGENEES CON FOR data.imagenes[]-->
     <div class="container-img">
-        <img class="imagen" src={{datas.imagenes}} alt="Imagen Proyecto">
+        <img class="imagen" src={{data.imagenes}} alt="Imagen Proyecto">
     </div>
 
     <hr>

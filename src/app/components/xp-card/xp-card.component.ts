@@ -17,7 +17,7 @@ export class XpCardComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    console.log(this.item)
+
   }
 
 }
