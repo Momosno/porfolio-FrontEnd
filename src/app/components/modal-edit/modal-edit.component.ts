@@ -9,10 +9,6 @@ import { AboutComponent } from '../about/about.component';
   styleUrls: ['./modal-edit.component.css']
 })
 export class ModalEditComponent {
-
-  @Input() parrafo: string;
-
-
   closeResult = '';
 
   constructor(private modalService: NgbModal) { }

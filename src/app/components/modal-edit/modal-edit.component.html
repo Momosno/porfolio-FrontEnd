@@ -1,26 +1,17 @@
 <ng-template #content let-modal>
 	<div class="modal-header">
-		<h4 class="modal-title" id="modal-basic-title">Edicion de campo</h4>
-		<button type="button" class="btn-close" aria-label="Close" (click)="modal.close()"></button>
+		<h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
 	</div>
 	<div class="modal-body">
 		<form>
 			<div class="mb-3">
-				<label for="texto">Editar nombre</label>
+				<label for="editor">Date of birth</label>
 				<div class="input-group">
-					<input
-						id="texto"
-						class="form-control"
-						placeholder="yyyy-mm-dd"
-						name="editor"
-						
-					/>
-					
-                    
-            <!-- <button class="button-edit-nombre" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                HOLA
-                <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
-            </button> -->
+					<textarea  cols="40" rows="5" id="editor"
+					class="form-control"
+					placeholder="VARIABLE"
+					name="editor">VARIABLE</textarea> 
 				</div>
 			</div>
 		</form>
@@ -30,8 +21,26 @@
 	</div>
 </ng-template>
 
-<button class="button-edit-nombre" (click)="open(content)">
-	<img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
-</button>
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+
+<hr />
 
 <pre>{{ closeResult }}</pre>
+
+<!-- <label for="editor">Editar campo</label>
+				<div class="input-group">
+					<textarea  cols="40" rows="5" id="editor"
+					class="form-control"
+					placeholder="VARIABLE"
+					name="editor">
+						
+						
+					</textarea> 
+				
+				
+				
+				
+				
+<button class="button-edit-nombre" (click)="open(content)">
+	<img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
+</button>-->
