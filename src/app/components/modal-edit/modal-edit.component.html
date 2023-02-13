@@ -1,52 +1,33 @@
 <ng-template #content let-modal>
 	<div class="modal-header">
-		<h4 class="modal-title" id="modal-basic-title">Profile update</h4><!--titulo modal -->
+		<h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
 	</div>
-		 <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button> <!--cruz cerrar -->
-
-
 	<div class="modal-body">
-		<form #myForm="ngForm" (ngSubmit)="submit(myForm)">
+		<form>
 			<div class="mb-3">
-				<label for="editor">Editar cuadro texto</label> <!-- Titulo campo edicion -->
-
-					<div class="input-group">
-						<textarea  cols="40" rows="5" id="editor"
+				<label for="dateOfBirth">Date of birth</label>
+				<div class="input-group">
+					<input
+						id="dateOfBirth"
 						class="form-control"
-						placeholder="VARIABLE"
-						name="editor"
-						#username="ngModel" ngModel></textarea> 
-					</div>
+						placeholder="yyyy-mm-dd"
+						name="dp"
+						ngbDatepicker
+						#dp="ngbDatepicker"
+					/>
+					<button class="btn btn-outline-secondary bi bi-calendar3" (click)="dp.toggle()" type="button"></button>
+				</div>
 			</div>
 		</form>
 	</div>
-
-
-	<div class="modal-footer"> <!-- Footer Modal -->
+	<div class="modal-footer">
 		<button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
 	</div>
 </ng-template>
-				
-<button class="button-edit-nombre" (click)="open(content)">
-	<img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
-</button>
+
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+
+<hr />
 
 <pre>{{ closeResult }}</pre>
-
-<!-- <label for="editor">Editar campo</label>
-				<div class="input-group">
-					<textarea  cols="40" rows="5" id="editor"
-					class="form-control"
-					placeholder="VARIABLE"
-					name="editor">
-						
-						
-					</textarea> 
-				
-				
-				
-				
-				
-<button class="button-edit-nombre" (click)="open(content)">
-	<img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
-</button>-->
