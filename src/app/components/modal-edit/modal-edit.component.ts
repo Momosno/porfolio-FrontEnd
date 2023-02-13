@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbDatepickerModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from '../about/about.component';
+import { NgForm } from '@angular/forms';
 
 
 @Component({
@@ -32,6 +33,14 @@ export class ModalEditComponent {
     } else {
       return `with: ${reason}`;
     }
+  }
+
+
+  submit(myForm: NgForm): void {
+    console.log(myForm.value);
+    console.log(myForm.value.usuario);//Validacion
+
+
   }
 }
 

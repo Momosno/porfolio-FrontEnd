@@ -1,29 +1,35 @@
 <ng-template #content let-modal>
 	<div class="modal-header">
-		<h4 class="modal-title" id="modal-basic-title">Profile update</h4>
-		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+		<h4 class="modal-title" id="modal-basic-title">Profile update</h4><!--titulo modal -->
 	</div>
+		 <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button> <!--cruz cerrar -->
+
+
 	<div class="modal-body">
-		<form>
+		<form #myForm="ngForm" (ngSubmit)="submit(myForm)">
 			<div class="mb-3">
-				<label for="editor">Date of birth</label>
-				<div class="input-group">
-					<textarea  cols="40" rows="5" id="editor"
-					class="form-control"
-					placeholder="VARIABLE"
-					name="editor">VARIABLE</textarea> 
-				</div>
+				<label for="editor">Editar cuadro texto</label> <!-- Titulo campo edicion -->
+
+					<div class="input-group">
+						<textarea  cols="40" rows="5" id="editor"
+						class="form-control"
+						placeholder="VARIABLE"
+						name="editor"
+						#username="ngModel" ngModel></textarea> 
+					</div>
 			</div>
 		</form>
 	</div>
-	<div class="modal-footer">
+
+
+	<div class="modal-footer"> <!-- Footer Modal -->
 		<button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
 	</div>
 </ng-template>
-
-<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
-
-<hr />
+				
+<button class="button-edit-nombre" (click)="open(content)">
+	<img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
+</button>
 
 <pre>{{ closeResult }}</pre>
 

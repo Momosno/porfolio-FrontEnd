@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Loginservice } from 'src/app/services/login.service';
-import { FormControl } from '@angular/forms';
 import { NgForm } from '@angular/forms';
 
 
