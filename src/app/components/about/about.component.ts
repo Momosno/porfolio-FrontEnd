@@ -31,6 +31,11 @@ export class AboutComponent implements OnInit {
     this.modalService.open('modal-1')
   }
 
+  save_button(data:any){
+    console.log(data)
+    this.modalService.close()
+  }
+
 
 
 

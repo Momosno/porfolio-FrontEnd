@@ -36,10 +36,11 @@
 
   <div>
     <jw-modal id="modal-1">
-        <h1>Edicion de campo</h1>
-        <p>Texto a editar: <input type="text" [(ngModel)]="bodyText" /></p>
-        <button (click)="modalService.close();">HACER QUE SEA SAVE</button>
+        <h1 class="jw-h1">Edicion de campo</h1>
+        <p>Texto a editar: <textarea style="width: 100%;" rows="10" type="text" [(ngModel)]="bodyText">g</textarea></p>
+        <button class="btn btn-success" (click)="save_button(bodyText);">HACER QUE SEA SAVE</button>
     </jw-modal>
   </div>
 
 </body>
+

@@ -7,48 +7,48 @@
   "educacion": [{
       "titulo": "Titulo 1",
       "resumen": "wasd 1",
-      "img": "IMAGEN"
+      "img": "assets/Images/cafe code.jpg"
     },
     {
       "titulo": "Titulo 2",
       "resumen": "wasd 2",
-      "img": "IMAGEN"
+      "img": "assets/Images/cafe code.jpg"
     },
     {
       "titulo": "Titulo 3",
       "resumen": "wasd 3",
-      "img": "IMAGEN"
+      "img": "assets/Images/cafe code.jpg"
     },
     {
       "titulo": "Titulo 4",
       "resumen": "wasd 4",
-      "img": "IMAGEN"
+      "img": "assets/Images/cafe code.jpg"
     }
   ],
   "experiencia": [{
       "titulo": "EXPERIENCIA 1",
       "resumen": "wasd 1",
-      "img": "IMAGEN"
+      "img": "assets/Images/cafe code.jpg"
     },
     {
       "titulo": "EXPERIENCIA 2",
       "resumen": "wasd 2",
-      "img": "IMAGEN"
+      "img": "assets/Images/cafe code.jpg"
     },
     {
       "titulo": "EXPERIENCIA 3",
       "resumen": "wasd 3",
-      "img": "IMAGEN"
+      "img": "assets/Images/cafe code.jpg"
     },
     {
       "titulo": "EXPERIENCIA 3",
       "resumen": "wasd 3",
-      "img": "IMAGEN"
+      "img": "assets/Images/cafe code.jpg"
     },
     {
       "titulo": "EXPERIENCIA 4",
       "resumen": "wasd 4",
-      "img": "IMAGEN"
+      "img": "assets/Images/cafe code.jpg"
     }
   ],
 
@@ -114,6 +114,7 @@
       "skillName": "HTML/CSS",
       "offset": "150"
     },
+    
     {
       "percentage": "Junior",
       "skillName": "PYTHON",
