@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ModalService } from 'src/app/services/modal.service';
 import { PortfolioService } from 'src/app/services/portfolio.service';
-import { ModalEditComponent } from '../modal-edit/modal-edit.component';
+
 
 @Component({
   selector: 'app-about',
@@ -9,13 +10,12 @@ import { ModalEditComponent } from '../modal-edit/modal-edit.component';
 })
 export class AboutComponent implements OnInit {
 
-  @ViewChild(ModalEditComponent, { static: true }) child: ModalEditComponent;
-
   /*DECLARO VARIABLES*/
   miPortfolio: any;
   content: any;
+  bodyText = "";
 
-  constructor(private datosPortfolio: PortfolioService) { }
+  constructor(private datosPortfolio: PortfolioService, protected modalService: ModalService) { }
   //private datosPortfolio: PortfolioService) --> injecta datos en el componente desde ese servicio y se los puede usar
 
   ngOnInit(): void {
@@ -26,19 +26,11 @@ export class AboutComponent implements OnInit {
 
   }
 
-
-
-
-
-
-  public editar(data: any): void {
-    console.log(data);
-
+  modalidachi(id:string,data:any){
+    this.bodyText=data
+    this.modalService.open('modal-1')
   }
 
-  callChild(content: any) {
-    this.child.abrir(content);
-  }
 
 
 

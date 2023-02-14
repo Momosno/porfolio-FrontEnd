@@ -7,9 +7,9 @@
 
 
 
-<button class="button-edit" type= button role="button">
-    <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
-</button>
+<button  (click)="modalidachi('modal-1',item.titulo,item.resumen)" class="button-edit-paragraph" type="button" role="button">
+    <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" />
+  </button>
 
 <button class="button-delete" type= button role="button">
     <img class="img-edit" src="assets/Icons/icons/x-lg.svg" alt="Boton de edicion" >
@@ -17,5 +17,14 @@
 
 <hr>
 
+<div>
+    
+    <jw-modal id="modal-1">
+        <h1>Edicion de campo</h1>
+        <p>Texto a editar: <input type="text" [(ngModel)]="titulo" /></p>
+        <button (click)="modalService.close();">HACER QUE SEA SAVE</button>
+    </jw-modal>
+    
+  </div>
 
 

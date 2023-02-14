@@ -1,58 +1,45 @@
 <body>
-    <div class="container-body">
+  <div class="container-body">
+    <div class="container-profile-picture">
+      <img class="profile-picture" src="assets\Images\uli.jpg" alt="Foto de Perfil" />
 
-        <div class="container-profile-picture">
-            <img class="profile-picture" src="assets\Images\uli.jpg" alt="Foto de Perfil">
-            
-            <button class="button-edit-foto" type= button role="button">
-                <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
-            </button>
-        
-        </div>
-
-
- 
-        <div class="summary">
-            <h3> 
-                <b>{{miPortfolio.resumen}}</b> 
-            </h3>
-            
-
-            <button (click)="callChild(miPortfolio.resumen)" class="button-edit-resumen" type= button role="button">
-                <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
-            </button>
-            
-        </div>
-
-
-
-        <div class="name">
-            <h1>{{miPortfolio.name}}</h1>
-
-  
-            <button class="button-edit-nombre" (click)="callChild(miPortfolio.name)">
-                <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
-            </button>
-
-        </div>
-
-
-        
-        <div class="paragraph">
-            <h3>{{miPortfolio.parrafo}}</h3>
-            <button (click)="callChild(miPortfolio.parrafo)" class="button-edit-paragraph" type= button role="button">
-                <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" >
-            </button>
-
-        </div>
+      <button class="button-edit-foto" type="button" role="button">
+        <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" />
+      </button>
     </div>
 
+    <div class="summary">
+      <h3>
+        <b>{{ miPortfolio.resumen }}</b>
+      </h3>
 
+      <button  (click)="modalidachi('modal-1',miPortfolio.resumen )" class="button-edit-resumen" type="button" role="button">
+        <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" />
+      </button>
+    </div>
 
-    <app-modal-edit></app-modal-edit>
-    
-    
+    <div class="name">
+      <h1>{{ miPortfolio.name }}</h1>
 
+      <button  (click)="modalidachi('modal-1',miPortfolio.name )" class="button-edit-nombre">
+        <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" />
+      </button>
+    </div>
 
+    <div class="paragraph">
+      <h3>{{ miPortfolio.parrafo }}</h3>
+      <button  (click)="modalidachi('modal-1',miPortfolio.parrafo )"class="button-edit-paragraph" type="button" role="button">
+        <img class="img-edit" src="assets\Icons\icons\pencil-fill.svg" alt="Boton de edicion" />
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <jw-modal id="modal-1">
+        <h1>Edicion de campo</h1>
+        <p>Texto a editar: <input type="text" [(ngModel)]="bodyText" /></p>
+        <button (click)="modalService.close();">HACER QUE SEA SAVE</button>
+    </jw-modal>
+  </div>
 
 </body>
