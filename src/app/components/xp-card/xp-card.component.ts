@@ -15,7 +15,7 @@ export class XpCardComponent implements OnInit {
   @Input() item: any;
   
   titulo = "";
-  parrafo="";
+  resumen= "";
 
   constructor(protected modalService: ModalService) {
 
@@ -25,9 +25,10 @@ export class XpCardComponent implements OnInit {
 
   }
 
-  modalidachi(id:string,titulo:any,parrafo:any){
+  modalidachi(id:string,titulo:any,resumen:any){
     this.titulo=titulo
-    this.parrafo=parrafo
+    this.resumen=resumen
+    console.log(this.titulo,this.resumen)
     this.modalService.open(id)
   }
 

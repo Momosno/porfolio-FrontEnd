@@ -28,7 +28,7 @@ export class AboutComponent implements OnInit {
 
   modalidachi(id:string,data:any){
     this.bodyText=data
-    this.modalService.open('modal-1')
+    this.modalService.open(id)
   }
 
   save_button(data:any){
