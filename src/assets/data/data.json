@@ -5,47 +5,52 @@
   "profile-img": "METER IMAGEN",
 
   "educacion": [{
+    "id":1,
       "titulo": "Titulo 1",
       "resumen": "wasd 1",
       "img": "assets/Images/cafe code.jpg"
     },
     {
+      "id":2,
       "titulo": "Titulo 2",
       "resumen": "wasd 2",
       "img": "assets/Images/cafe code.jpg"
     },
     {
+      "id":3,
       "titulo": "Titulo 3",
       "resumen": "wasd 3",
       "img": "assets/Images/cafe code.jpg"
     },
     {
+      "id":4,
       "titulo": "Titulo 4",
       "resumen": "wasd 4",
       "img": "assets/Images/cafe code.jpg"
     }
   ],
   "experiencia": [{
+    "id":1,
       "titulo": "EXPERIENCIA 1",
       "resumen": "wasd 1",
       "img": "assets/Images/cafe code.jpg"
     },
-    {
+    {"id":2,
       "titulo": "EXPERIENCIA 2",
       "resumen": "wasd 2",
       "img": "assets/Images/cafe code.jpg"
     },
-    {
+    {"id":3,
       "titulo": "EXPERIENCIA 3",
       "resumen": "wasd 3",
       "img": "assets/Images/cafe code.jpg"
     },
-    {
+    {"id":4,
       "titulo": "EXPERIENCIA 3",
       "resumen": "wasd 3",
       "img": "assets/Images/cafe code.jpg"
     },
-    {
+    {"id":5,
       "titulo": "EXPERIENCIA 4",
       "resumen": "wasd 4",
       "img": "assets/Images/cafe code.jpg"

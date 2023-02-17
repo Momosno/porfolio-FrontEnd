@@ -2,8 +2,6 @@
     <img class="imagen " src="{{item.img}}" alt="Imagen ">
     <h3>{{item.titulo}}</h3>
     <p>{{item.resumen}}</p> 
-
-    
 </div>
 
 
@@ -14,20 +12,16 @@
   </button>
 
 
-<button class="button-delete" type= button role="button">
+<button class="button-delete" type= button role="button" >
     <img class="img-edit" src="assets/Icons/icons/x-lg.svg" alt="Boton de edicion" >
 </button>
 
 <hr>
 
-<jw-modal id="modal-2">
-    <h1>Edicion de campo</h1>
-    <p>Editar Titulo: <textarea style="width: 100%;" rows="2" type="text" [(ngModel)]="this.titulo"></textarea></p>
-    <hr>
-    <p>Editar Resumen: <textarea style="width: 100%;" rows="8" type="text" [(ngModel)]="this.resumen"></textarea></p>
-    <button (click)="modalService.close();">HACER QUE SEA SAVE</button>
-</jw-modal>
 
+<div [innerHTML]="html_template">
+   
+</div>
 
     
  
